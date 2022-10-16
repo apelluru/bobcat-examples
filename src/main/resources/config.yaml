@@ -7,4 +7,29 @@ default:
     allure.report: true
     allure.create.enviroment: true
     timings.implicitTimeout: 10
-  contexts: [chrome]
+    webdriver.type: remote
+    webdriver.url: http://1.2.3.4:4444/wd/hub
+    webdriver.cap.recordVideo: false
+    webdriver.cap.maxInstances: 1
+    webdriver.cap.platform: LINUX
+  contexts: [dev, chrome]
+
+contexts:
+  chrome:
+    webdriver.cap.browserName: chrome
+  firefox:
+    webdriver.cap.browserName: firefox
+  dev:
+    author.url: http://localhost:4502
+    author.ip: http://1.2.3.4:4502
+    author.login: admin
+    author.password: admin
+    publish.url: http://localhost:4503
+    publish.ip: http://1.2.3.4:4503
+  prod:
+    author.url: http://localhost:4502
+    author.ip: http://1.2.3.4:4502
+    author.login: admin
+    author.password: admin
+    publish.url: http://localhost:4503
+    publish.ip: http://1.2.3.4:4503
