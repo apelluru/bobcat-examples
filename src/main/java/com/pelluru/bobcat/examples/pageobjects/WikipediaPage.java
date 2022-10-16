@@ -1,4 +1,4 @@
-package com.pelluru.bobcat.examples.bobcat.examples.pageobjects;
+package com.pelluru.bobcat.examples.pageobjects;
 
 import com.cognifide.qa.bb.page.Page;
 import org.openqa.selenium.WebDriver;

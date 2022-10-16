@@ -1,4 +1,4 @@
-package com.pelluru.bobcat.examples.bobcat.examples.pageobjects;
+package com.pelluru.bobcat.examples.pageobjects;
 
 import java.util.Collections;
 import com.cognifide.qa.bb.constants.Timeouts;

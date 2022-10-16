@@ -1,4 +1,4 @@
-package com.pelluru.bobcat.examples.bobcat.examples.pageobjects;
+package com.pelluru.bobcat.examples.pageobjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

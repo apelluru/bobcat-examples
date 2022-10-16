@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 import com.cognifide.qa.bb.junit5.guice.Modules;
 
 import com.cognifide.qa.bb.modules.BobcatRunModule;
-import com.pelluru.bobcat.examples.bobcat.examples.pageobjects.WikipediaPage;
-import com.pelluru.bobcat.examples.bobcat.examples.pageobjects.DefinitionPage;
+import com.pelluru.bobcat.examples.pageobjects.WikipediaPage;
+import com.pelluru.bobcat.examples.pageobjects.DefinitionPage;
 
 @Modules(BobcatRunModule.class)
 public class WikipediaTest {
