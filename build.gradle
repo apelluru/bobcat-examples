@@ -8,7 +8,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'io.qameta.allure:allure-gradle:2.5'
+        classpath 'io.qameta.allure:allure-gradle:2.8.1'
     }
 }
 
@@ -17,6 +17,7 @@ apply plugin: 'io.qameta.allure'
 
 sourceCompatibility = 1.8
 
+def junitJupiterEngineVersion = '5.9.1'
 def bobcatVersion = '2.3.0'
 def aemDependency = 'bb-aem-65'
 
@@ -26,10 +27,13 @@ repositories {
 }
 
 dependencies {
+    testImplementation group:'org.junit.jupiter' ,name: 'junit-jupiter-api', version: junitJupiterEngineVersion
+    testRuntimeOnly group:'org.junit.jupiter' ,name: 'junit-jupiter-engine', version: junitJupiterEngineVersion
     compile group: 'com.cognifide.qa.bb', name: 'bb-core', version: bobcatVersion
     compile group: 'com.cognifide.qa.bb', name: 'bb-junit5', version: bobcatVersion
     compile group: 'com.cognifide.qa.bb', name: 'bb-aem-core', version: bobcatVersion
     compile group: 'com.cognifide.qa.bb', name: aemDependency, version: bobcatVersion
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.2'
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
     testCompile 'org.projectlombok:lombok:1.18.4'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.4'
@@ -63,11 +67,11 @@ gradle.projectsEvaluated {
 }
 
 allure {
-    version = '2.13.6'
+    version = '2.11.0'
     autoconfigure = true
     aspectjweaver = true
     aspectjVersion = '1.8.10'
     useJUnit5 {
-        version = '2.13.6'
+        version = '2.11.0'
     }
 }

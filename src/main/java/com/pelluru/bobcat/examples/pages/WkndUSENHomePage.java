@@ -7,12 +7,12 @@ import com.google.inject.Inject;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @PageObject
-public class WkndHomePage extends AemAuthorPage<WkndHomePage> {
+public class WkndUSENHomePage extends AemAuthorPage<WkndUSENHomePage> {
 
   @Inject
   private BobcatWait bobcatWait;
 
-  private String title = "English";
+  private String title = "WKND Adventures and Travel";
 
   public String getTitle() {
     return title;

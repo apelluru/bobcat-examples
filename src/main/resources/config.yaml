@@ -1,35 +1,30 @@
 default:
   properties:
     proxy.enabled: false
-    proxy.ip: 127.0.0.1
-    proxy.port: 9000
-    page.title.timeout: 30
     allure.report: true
     allure.create.enviroment: true
-    timings.implicitTimeout: 10
-    webdriver.type: remote
-    webdriver.url: http://1.2.3.4:4444/wd/hub
-    webdriver.cap.recordVideo: false
-    webdriver.cap.maxInstances: 1
-    webdriver.cap.platform: LINUX
   contexts: [dev, chrome]
 
 contexts:
   chrome:
     webdriver.cap.browserName: chrome
+    webdriver.type: customChrome
+    webdriver.reusable: true
   firefox:
     webdriver.cap.browserName: firefox
   dev:
-    author.url: http://localhost:4502
-    author.ip: http://1.2.3.4:4502
+    author.url: http://localhost:4505
+    author.ip: http://127.0.0.1:4505
     author.login: admin
     author.password: admin
-    publish.url: http://localhost:4503
-    publish.ip: http://1.2.3.4:4503
+    publish.url: http://localhost:4506
+    publish.ip: http://127.0.0.1:4506
+    login.token.name: login-token
   prod:
-    author.url: http://localhost:4502
-    author.ip: http://1.2.3.4:4502
+    author.url: http://localhost:4505
+    author.ip: http://127.0.0.1:4505
     author.login: admin
     author.password: admin
-    publish.url: http://localhost:4503
-    publish.ip: http://1.2.3.4:4503
+    publish.url: http://localhost:4506
+    publish.ip: http://127.0.0.1:4506
+    login.token.name: login-token
