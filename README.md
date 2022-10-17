@@ -20,3 +20,5 @@ Optional:
 1. Download    https://sites.google.com/a/chromium.org/chromedriver/downloads
 2. Move the driver to the /usr/local/bin folder using `mv chromedriver /usr/local/bin`
 
+
+# How to run 

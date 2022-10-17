@@ -13,6 +13,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
@@ -45,4 +46,6 @@ public class ConfigureTitleComponentTest {
         TitleComponentImpl titleContent = (TitleComponentImpl) wkndUSENHomePage.getContent(TitleComponent.class, 0);
         assertThat(titleContent.getTitle().trim().matches("Recent Articles"));
     }
+
+
 }

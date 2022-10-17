@@ -10,6 +10,7 @@ contexts:
     webdriver.cap.browserName: chrome
     webdriver.type: customChrome
     webdriver.reusable: true
+    webdriver.chrome.whitelistedIps: ""
   firefox:
     webdriver.cap.browserName: firefox
   dev:

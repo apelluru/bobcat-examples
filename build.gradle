@@ -33,7 +33,7 @@ dependencies {
     compile group: 'com.cognifide.qa.bb', name: 'bb-junit5', version: bobcatVersion
     compile group: 'com.cognifide.qa.bb', name: 'bb-aem-core', version: bobcatVersion
     compile group: 'com.cognifide.qa.bb', name: aemDependency, version: bobcatVersion
-    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.2'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.3.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
     testCompile 'org.projectlombok:lombok:1.18.4'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.4'
